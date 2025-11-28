@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cuidar el planeta</title>
+</head>
+
+<body style="font-family: Arial; background-color: #e8f5e9; padding: 20px;">
+
+    <h1>Cómo gastar menos recursos y cuidar a los seres vivos</h1>
+
+    <p>
+        Es importante usar menos agua, energía y plástico para no dañar a los animales 
+        ni a la naturaleza. Con pequeñas acciones, todos podemos ayudar al planeta.
+    </p>
+
+    <h2>¿Qué podemos hacer?</h2>
+    <ul>
+        <li>Ahorrar agua (cerrar el grifo cuando no se usa).</li>
+        <li>Apagar las luces cuando no las necesitamos.</li>
+        <li>Reciclar y usar menos plástico.</li>
+        <li>No tirar basura en ríos, parques o la calle.</li>
+        <li>Cuidar plantas, árboles y animales.</li>
+    </ul>
+
+    <h2>Mensaje en voz (haz clic)</h2>
+    <button onclick="hablar()">Escuchar mensaje</button>
+
+    <script>
+        function hablar() {
+            const texto = "Cuidemos el planeta usando menos agua, energía y plástico. Así ayudamos a que los animales y plantas vivan mejor.";
+            let voz = new SpeechSynthesisUtterance(texto);
+            voz.lang = "es-ES";
+            voz.rate = 1;
+            speechSynthesis.speak(voz);
+        }
+    </script>
+
+</body>
+</html>
